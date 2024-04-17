@@ -1,0 +1,10 @@
+.pizza-header {
+  display: flex;
+  justify-content: center;
+  background-color: #ce2829;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}

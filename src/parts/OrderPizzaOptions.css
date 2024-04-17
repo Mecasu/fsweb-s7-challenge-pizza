@@ -1,0 +1,208 @@
+.pizza-boyut-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.red {
+  color: #ce2829;
+}
+
+.pizza-boyut-section h4 {
+  padding-bottom: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.boyut {
+  display: flex;
+  color: #5f5f5f;
+  gap: 3rem;
+  margin: 0 0 3rem 0.5rem;
+}
+
+.pizza-hamur {
+  padding-right: 3rem;
+}
+
+.pizza-ek-malzemeler h3 {
+  padding: 1rem 0;
+}
+
+.pizza-ek-malzemeler p {
+  padding-bottom: 1.5rem;
+  font: "Barlow", sans-serif;
+  color: #5f5f5f;
+}
+#invisible {
+  display: none;
+}
+.pizza-ek-malzemeler p:nth-of-type(2) {
+  font-size: 0.85rem;
+  color: #ce2829;
+}
+
+.pizza-malzemeler {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font: "Barlow", sans-serif;
+  color: #5f5f5f;
+}
+
+.pizza-malzemeler .pizza-malzeme {
+  width: 33%;
+  height: 35px;
+}
+
+.pizza-malzeme label {
+  padding-left: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pizza-siparis-notu h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pizza-siparis-notu input {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: #d9d9d9 1px solid;
+  border-radius: 0.3rem;
+}
+
+hr {
+  margin: 3rem 0;
+  border: #d9d9d9 0.1rem solid;
+}
+
+.pizza-siparis-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.pizza-adet {
+  flex-grow: 1;
+  display: flex;
+}
+
+.pizza-adet button {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.pizza-adet button:hover {
+  box-shadow: 0px 0px 10px orange;
+}
+
+.pizza-adet p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.8rem;
+  width: 50px;
+  height: 50px;
+  border: 0;
+}
+
+.pizza-fiyat {
+  justify-content: space-between;
+  flex-grow: 1;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #292929;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-bottom: 7rem;
+}
+
+.pizza-fiyat h3 {
+  padding: 2rem 1rem 0 1rem;
+}
+
+.pizza-fiyat .fiyat-section {
+  padding: 0.5rem 1rem;
+}
+
+.fiyat-section .secim-section {
+  display: flex;
+  justify-content: space-between;
+  color: #5f5f5f;
+}
+
+.fiyat-section .red {
+  color: #ce2829;
+}
+
+.pizza-confirm-button {
+  border: 0;
+  background-color: #fdc913;
+  height: 60px;
+  cursor: pointer;
+}
+.pizza-confirm-button:disabled {
+  cursor: not-allowed;
+}
+
+input[type="radio"]:after {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 20px;
+  top: -10px;
+  left: -10px;
+  position: relative;
+  background-color: white;
+
+  visibility: visible;
+}
+
+input[type="radio"]::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(icon);
+  color: #292929;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input[type="radio"]:checked:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 20px;
+  background-color: #5f5f5f;
+  color: white;
+  visibility: visible;
+  content: attr(icon);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  accent-color: orange;
+  font: italic;
+}
+input[type="checkbox"]:hover {
+  box-shadow: 0px 0px 10px orange;
+}

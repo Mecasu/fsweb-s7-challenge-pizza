@@ -1,0 +1,46 @@
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+  color: white;
+  background: url("/public/Assets/mile1-assets/home-banner.png");
+  background-size: cover;
+  background-position: top;
+}
+.home-header img {
+  padding: 2.5rem;
+}
+.home-header h2 {
+  font-size: 5rem;
+  font-weight: 222;
+  line-height: 1;
+  letter-spacing: -4.5px;
+}
+.home-header h3 {
+  font-size: 3rem;
+  padding-top: 15rem;
+  font-weight: 300;
+  font-family: "Satisfy", sans-serif;
+  color: #fdc913;
+  line-height: 0.7;
+}
+
+.home-header button {
+  background-color: #fdc913;
+  padding: 0.75rem 2.5rem;
+  margin: 2rem 0;
+  font-weight: 500;
+  border: 0;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.home-header button:hover {
+  box-shadow: 5px 5px 5px 0px #5f5f5f;
+}
+
+.home-main-content {
+  background-color: #faf7f2;
+}

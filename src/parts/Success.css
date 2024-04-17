@@ -1,0 +1,30 @@
+.success-form {
+  background-color: #ce2829;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.success-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.success-page h2 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.75rem;
+  font-weight: lighter;
+}
+.success-page h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Satisfy", sans-serif;
+  color: #fdc913;
+  line-height: 0.7;
+  padding-top: 15rem;
+  padding-bottom: 0;
+}

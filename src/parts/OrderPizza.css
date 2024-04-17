@@ -1,0 +1,12 @@
+.pizza-container {
+  display: flex;
+  justify-content: center;
+  width: 99.1vw;
+  background-color: #faf7f2;
+}
+
+.pizza-container .pizza-content {
+  display: flex;
+  flex-direction: column;
+  width: 555px;
+}
