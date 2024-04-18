@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./OrderPizzaOptions.css";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import { FormGroup, Input, Label } from "reactstrap";
 
 const malzemeler = [
   "Pepperoni",
@@ -155,18 +156,25 @@ export default function OrderPizzaOptions({ dataFn }) {
           {!errors.boyut && <p className="red">Lütfen seçim yapınız.</p>}
         </div>
         <div className="pizza-hamur">
-          <h4>
-            Hamur Seç<span className="red"> *</span>
-          </h4>
-
-          <select name="hamur" value={formData.hamur} onChange={handleChange}>
-            <option hidden defaultValue>
-              -- Hamur Kalınlığı Seç --
-            </option>
-            <option value="İnce">İnce</option>
-            <option value="Normal">Normal</option>
-            <option value="Kalın">Kalın</option>
-          </select>
+          <FormGroup>
+            <h4>
+              Hamur Seç<span className="red"> *</span>
+            </h4>
+            <Input
+              id="exampleSelect"
+              type="select"
+              name="hamur"
+              value={formData.hamur}
+              onChange={handleChange}
+            >
+              <option hidden defaultValue>
+                -- Hamur Kalınlığı Seç --
+              </option>
+              <option value="İnce">İnce</option>
+              <option value="Normal">Normal</option>
+              <option value="Kalın">Kalın</option>
+            </Input>
+          </FormGroup>
           {
             <p className="red" hidden={errors.hamur}>
               Lütfen seçim yapınız.

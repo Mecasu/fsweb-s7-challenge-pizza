@@ -4,6 +4,7 @@ import Home from "./parts/Home.jsx";
 import OrderPizza from "./parts/OrderPizza.jsx";
 import Success from "./parts/Success.jsx";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [formData, setFormData] = useState([]);
