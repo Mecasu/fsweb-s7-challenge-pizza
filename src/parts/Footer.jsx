@@ -52,7 +52,10 @@ const Footer = () => {
       <div className="footer-hr"></div>
       <div className="footer-section">
         <div className="footer-copyright">
-          <p>© 2024 Teknolojik Yemekler.</p>
+          <p>
+            {" "}
+            <i class="fa-regular fa-copyright"></i> 2024 Teknolojik Yemekler.
+          </p>
           <i class="fa-brands fa-x-twitter"></i>
         </div>
       </div>
