@@ -2,7 +2,8 @@ import React from "react";
 import "./Success.css";
 import OrderPizzaHeader from "./OrderPizzaHeader";
 
-export default function Success({ formData, toplam }) {
+export default function Success({ formData }) {
+  console.log(formData);
   return (
     <>
       <OrderPizzaHeader />

@@ -17,9 +17,9 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-address">
             <h2>Teknolojik Yemekler</h2>
-            {specs.map((data) => {
+            {specs.map((data, i) => {
               return (
-                <div className="each-address">
+                <div key={i} className="each-address">
                   <img src={data[1]} />
                   <p>{data[0]}</p>
                 </div>
@@ -41,6 +41,7 @@ const Footer = () => {
               {photos.map((photo, i) => {
                 return (
                   <img
+                    key={i}
                     src={`../Assets/mile2-aseets/footer/insta/li-${i}.png`}
                   />
                 );
@@ -54,9 +55,10 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>
             {" "}
-            <i class="fa-regular fa-copyright"></i> 2024 Teknolojik Yemekler.
+            <i className="fa-regular fa-copyright"></i> 2024 Teknolojik
+            Yemekler.
           </p>
-          <i class="fa-brands fa-x-twitter"></i>
+          <i className="fa-brands fa-x-twitter"></i>
         </div>
       </div>
     </footer>
